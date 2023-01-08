@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2023 - present Java Laboratory
+ * JLMath.java v1.00.01
+ * by Arsam S. Kasmaie
+ */
+
 package com.javalaboratory.JLMath;
 
 @SuppressWarnings("all")
@@ -25,5 +31,14 @@ public class JLMath {
         }
         return result;
     } // end method power
+    
+    public static double compare(double firstNumber, double secondNumber) {
+        if (firstNumber > secondNumber) {
+            return firstNumber;
+        }
+        else {
+            return secondNumber;
+        }
+    } // end method compaire
 
 } // end class JLMath
