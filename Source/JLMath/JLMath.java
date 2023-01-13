@@ -1,6 +1,5 @@
 /*
  * Copyright (c) 2023 - present Java Laboratory
- * JLMath.java v1.00.01
  * by Arsam S. Kasmaie
  */
 
@@ -36,9 +35,14 @@ public class JLMath {
         if (firstNumber > secondNumber) {
             return firstNumber;
         }
-        else {
-            return secondNumber;
-        }
+        else { return secondNumber; }
     } // end method compaire
+    
+    public static double range(double number) {
+        if (number > 0) {
+            return number + range(number - 1);
+        }
+        else { return 0; }
+    } // end method range
 
 } // end class JLMath
