@@ -37,11 +37,12 @@ public class JLMath {
     } // end method power
     
     // This method compares two numbers
-    public static double compare(double firstNumber, double secondNumber) {
-        if (firstNumber > secondNumber) {
-            return firstNumber;
+    public static double compaire(double firstNumber, double secondNumber) {
+        double maximuimNumber = firstNumber;
+        if (firstNumber < secondNumber) {
+            maximuimNumber = secondNumber;
         }
-        else { return secondNumber; }
+        return maximuimNumber;
     } // end method compaire
     
     // This method adds a sequence of numbers together
