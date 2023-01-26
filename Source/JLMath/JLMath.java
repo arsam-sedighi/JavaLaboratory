@@ -77,5 +77,5 @@ public class JLMath {
             return number;
         }
         return number;
-    } // end method isOdd
+    } // end method abs
 } // end class JLMath
