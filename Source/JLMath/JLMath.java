@@ -69,4 +69,13 @@ public class JLMath {
         }
         else { return false; }
     } // end method isOdd
+    
+    // This method provides the absolute value of the number
+    public static double abs(double number) {
+        if (number < 0) {
+            number *= -1;
+            return number;
+        }
+        return number;
+    } // end method isOdd
 } // end class JLMath
