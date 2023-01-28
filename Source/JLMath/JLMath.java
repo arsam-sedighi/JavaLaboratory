@@ -7,6 +7,7 @@ package com.javalaboratory.JLMath;
 
 @SuppressWarnings("all")
 public class JLMath {
+    public static final double PI = 3.14159265359;
     // This method adds two numbers together
     public static double add(double firstNumber, double secondNumber) {
         return (firstNumber + secondNumber);
@@ -36,14 +37,23 @@ public class JLMath {
         return result;
     } // end method power
     
-    // This method compares two numbers
-    public static double compaire(double firstNumber, double secondNumber) {
+    // This method determines the largest number between two numbers
+    public static double max(double firstNumber, double secondNumber) {
         double maximuimNumber = firstNumber;
         if (firstNumber < secondNumber) {
             maximuimNumber = secondNumber;
         }
         return maximuimNumber;
-    } // end method compaire
+    } // end method max
+
+    // This method determines the smallest number between two numbers
+    public static double min(double firstNumber, double secondNumber) {
+        double minimuimNumber = firstNumber;
+        if (secondNumber < firstNumber) {
+            minimuimNumber = secondNumber;
+        }
+        return minimuimNumber;
+    } // end method min
     
     // This method adds a sequence of numbers together
     public static double range(double number) {
@@ -78,4 +88,28 @@ public class JLMath {
         }
         return number;
     } // end method abs
+    
+    // This method calculates the area of a square
+    public static double areaOfSquare(double side) {
+        double result = JLMath.power(side, 2);
+        return result;
+    } // end method areaOfSquare
+
+    // This method calculates the area of a rectangle
+    public static double areaOfRectangle(double length, double width) {
+        double result = length * width;
+        return result;
+    } // end method areaOfRectangle
+
+    // This method calculates the area of a circle
+    public static double areaOfCircle(double radius) {
+        double result = (JLMath.PI * JLMath.power(radius, 2));
+        return result;
+    } // end method areaOfCircle
+
+    // This method calculates the area of a cylinder
+    public static double areaOfCylinder(double radius, double height) {
+        double result = ((2 * JLMath.PI) * radius * height) + ((2 * JLMath.PI) * JLMath.power(radius, 2));
+        return result;
+    } // end method areaOfCylinder
 } // end class JLMath
