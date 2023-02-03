@@ -97,19 +97,19 @@ public class JLMath {
 
     // This method calculates the area of a rectangle
     public static double areaOfRectangle(double length, double width) {
-        double result = length * width;
+        double result = JLMath.multiply(length, width);
         return result;
     } // end method areaOfRectangle
 
     // This method calculates the area of a circle
     public static double areaOfCircle(double radius) {
-        double result = (JLMath.PI * JLMath.power(radius, 2));
+        double result = JLMath.multiply(JLMath.PI, JLMath.power(radius, 2));
         return result;
     } // end method areaOfCircle
 
     // This method calculates the area of a cylinder
     public static double areaOfCylinder(double radius, double height) {
-        double result = ((2 * JLMath.PI) * radius * height) + ((2 * JLMath.PI) * JLMath.power(radius, 2));
+        double result = JLMath.add((2 * JLMath.PI) * radius * height), ((2 * JLMath.PI) * JLMath.power(radius, 2));
         return result;
     } // end method areaOfCylinder
 } // end class JLMath
