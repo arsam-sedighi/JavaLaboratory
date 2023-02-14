@@ -56,12 +56,17 @@ public class JLMath {
     } // end method min
     
     // This method adds a sequence of numbers together
-    public static double range(double number) {
-        if (number < 0) { number *= -1; }
-        if (number > 0) {
-            return number + range(number - 1);
+    public static double range(double arrayLenght) {
+        int number = (int) arrayLenght;
+        double[] array = new double[number  < 0 ? -number : number];
+        for (int counter = 0; counter < array.length; counter++) {
+            array[counter] = 1 + counter;
         }
-        else { return 0; }
+        double total = 0;
+        for (double numbers :  array) {
+            total += numbers;
+        }
+        return total;
     } // end method range
     
     // This method determines whether the number is even or not
